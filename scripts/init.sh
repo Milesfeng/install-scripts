@@ -3,12 +3,11 @@ set -e
 
 sudo apt update
 sudo apt-get install nano \
-                     wget \ 
+                     wget \
                      git \
                      net-tools \
                      nmap \
                      tree \
                      ssh \
                      vim \
-                     wget \
                      curl -y
