@@ -1,3 +1,7 @@
+#!/bin/bash
+
+set -e
+
 ## install docker 
 sudo apt-get remove docker docker-engine docker.io containerd runc
 
@@ -27,3 +31,6 @@ sudo chmod +x /usr/local/bin/docker-compose
 sudo ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
 docker-compose --version
 
+## add docker group
+sudo groupadd docker
+sudo usermod -aG docker $USER
